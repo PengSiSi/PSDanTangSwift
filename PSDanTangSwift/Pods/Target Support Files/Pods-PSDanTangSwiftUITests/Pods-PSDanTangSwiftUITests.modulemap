@@ -1,0 +1,6 @@
+framework module Pods_PSDanTangSwiftUITests {
+  umbrella header "Pods-PSDanTangSwiftUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

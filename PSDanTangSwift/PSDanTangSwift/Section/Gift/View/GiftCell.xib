@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="giftCellId" id="gTV-IL-0wX" customClass="GiftCell" customModule="DanTangSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="248"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="248"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="yw_1222" translatesAutoresizingMaskIntoConstraints="NO" id="9TJ-Qt-ekj"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可爱大白多肉" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIX-pN-cpl">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3U-gS-uaV">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InQ-gN-NYd">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <state key="normal" title="21110" image="Search_GiftBtn_Default_12x10_">
+                            <color key="titleColor" red="0.59475212696335078" green="0.59475212696335078" blue="0.59475212696335078" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="b3U-gS-uaV" firstAttribute="top" secondItem="FIX-pN-cpl" secondAttribute="bottom" constant="17" id="3jf-Wq-4pj"/>
+                <constraint firstItem="9TJ-Qt-ekj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Rd-jk-zJV"/>
+                <constraint firstAttribute="trailing" secondItem="InQ-gN-NYd" secondAttribute="trailing" constant="2" id="MPP-Hz-2mq"/>
+                <constraint firstAttribute="trailing" secondItem="FIX-pN-cpl" secondAttribute="trailing" constant="8" id="PGI-ue-Hgg"/>
+                <constraint firstItem="9TJ-Qt-ekj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="cMr-SI-GCt"/>
+                <constraint firstItem="b3U-gS-uaV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="eWt-aG-7gH"/>
+                <constraint firstAttribute="bottom" secondItem="b3U-gS-uaV" secondAttribute="bottom" constant="17" id="fyB-L0-1xV"/>
+                <constraint firstItem="FIX-pN-cpl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="g54-c3-rcy"/>
+                <constraint firstAttribute="trailing" secondItem="9TJ-Qt-ekj" secondAttribute="trailing" constant="1" id="hve-NM-kSf"/>
+                <constraint firstAttribute="bottom" secondItem="InQ-gN-NYd" secondAttribute="bottom" constant="16" id="lsJ-tZ-2B7"/>
+                <constraint firstItem="FIX-pN-cpl" firstAttribute="top" secondItem="9TJ-Qt-ekj" secondAttribute="bottom" constant="22" id="sYc-6c-jTA"/>
+                <constraint firstItem="InQ-gN-NYd" firstAttribute="leading" secondItem="b3U-gS-uaV" secondAttribute="trailing" constant="45" id="tR7-3n-iZt"/>
+            </constraints>
+            <size key="customSize" width="152" height="248"/>
+            <connections>
+                <outlet property="imgView" destination="9TJ-Qt-ekj" id="uYe-aE-vh0"/>
+                <outlet property="likeButton" destination="InQ-gN-NYd" id="reJ-kK-WAb"/>
+                <outlet property="nameLabel" destination="FIX-pN-cpl" id="fNa-oD-ewh"/>
+                <outlet property="priceLabel" destination="b3U-gS-uaV" id="5wu-XW-RwO"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="193"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Search_GiftBtn_Default_12x10_" width="12" height="10"/>
+        <image name="yw_1222" width="3" height="3"/>
+    </resources>
+</document>
